@@ -1,6 +1,13 @@
 {
     "rewrites": [
-      { "source": "/", "destination": "/pages/index.html" }
+      { "source": "/", "destination": "/pages/index.html" },
+      { "source": "/rutacostera", "destination": "/pages/rutacostera.html" },
+      { "source": "/rutaminera", "destination": "/pages/rutaminera.html" },
+      { "source": "/rutaduranguesado", "destination": "/pages/rutaduranguesado.html" },
+      { "source": "/rutabilbao", "destination": "/pages/rutabilbao.html" },
+      { "source": "/rutagranbilbao", "destination": "/pages/rutagranbilbao.html" },
+      { "source": "/tarifas", "destination": "/pages/tarifas.html" },
+      { "source": "/contacto", "destination": "/pages/contacto.html" }      
     ]
   }
   
