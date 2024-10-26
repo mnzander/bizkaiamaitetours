@@ -1,0 +1,557 @@
+html{
+    scrollbar-width: thin;
+    scrollbar-color: #ecad29 #00000000;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    overflow-y: auto ;
+}
+
+@keyframes appearSmoothly {
+    from {
+    opacity: 0;
+    transform: translateY(1.5vw);
+    filter: blur(2px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    }
+}
+
+main {
+    animation: appearSmoothly 1s ease-in-out forwards;
+    animation-delay: .1s;
+    opacity: 0;
+    transform: translateY(0);
+    filter: blur(2px);
+
+    .wallpaper {
+        width: 100%;
+        background-image: url(/utils/img-index/puente-colgante.png);
+        background-size: cover;
+        position: absolute;
+        font-family: "Oswald", sans-serif;
+
+        h1 {
+            position: absolute;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: inherit;
+            background-color: #ecad29;
+        }
+    }
+
+    .description {
+        position: absolute;
+        font-family: "Poppins", sans-serif;
+
+        &::before {
+            content: "''Consulta nuestras tarifas y condiciones para un servicio transparente y de calidad.''";
+            position: absolute;
+            color: #ecad29;
+            font-style: italic;
+        }
+    }
+
+    .conditions {
+        position: absolute;
+        background-color: #ecad29;
+        color: black;
+        font-family: "Poppins", sans-serif;
+
+        &::before{
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        h2{
+            text-decoration: underline;
+        }
+
+        .conditions-list{
+            display: flex;
+            flex-direction: column;
+
+            b{
+                text-decoration: underline;
+                color: rgb(0, 0, 0)
+            }
+        }
+    }
+
+    .prices{
+        position: absolute;
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        background-color: rgba(255, 255, 255, 0.918);
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background-color: black;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            text-decoration: underline;
+            color:#ecad29
+        }
+
+        .flex{
+            display: flex;
+            justify-content: space-around;
+            color: black;
+
+            h3{
+                text-decoration: underline;
+            }
+        }
+
+        .advices {
+            display: flex;
+            color: black;
+
+            &::before{
+                content: "";
+                position: absolute;
+                height: 2px;
+                background-color: #ecad29;
+            }
+
+            h4 {
+                text-decoration: underline;
+
+                b {
+                    color: #ecad29;
+                }
+            }
+        }
+    }
+}
+
+/* MOVIL */
+@media only screen and (max-width: 950px) {
+    .wallpaper {
+        height: 11rem;
+        top: 0rem;
+        font-size: 1.1rem;
+
+        h1 {
+            top: 6rem;
+            left: 1rem;
+        }
+
+        &::after{
+            top: 11rem;
+        }
+    }
+
+    .description {
+        top: 12rem;
+        padding: 1rem 1rem;
+
+        &::before {
+            top: .25rem;
+            font-size: .85rem;
+        }
+
+        p{
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+    }
+
+    .conditions {
+        top: 45rem;
+        padding-bottom: 2rem;
+        height: 90rem;
+
+        h2{
+            padding-left: 1rem;
+            font-size: 1.4rem;
+            text-underline-offset: .3rem;
+        }
+
+        .conditions-list{
+            padding: 0 2rem 0 2.5rem;
+            gap: 1.5rem;
+            font-size: 1.15rem;
+
+            b{
+                text-underline-offset: .2rem;
+            }
+        }
+    }
+
+    .prices{
+        top: 137rem;
+        padding-bottom: 2rem;
+        height: 90rem;
+
+        h2 {
+            font-size: 2.5rem;
+            letter-spacing: .1rem;
+            text-underline-offset: .3rem;
+        }
+
+        .flex{
+            flex-direction: column;
+            margin-bottom: 1rem;
+
+            .spanish, .english {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3{
+                    font-size: 1.5rem;
+                    text-underline-offset: .3rem;
+                }
+                
+                li{
+                    font-size: 1.25rem;
+                    margin-bottom: 1rem;
+                    margin-left: 0.5rem;
+                }
+
+                p{
+                    margin-left: -1rem;
+                    font-size: 1.15rem;
+                }
+            }
+        }
+
+        .advices {
+            flex-direction: column;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            &::before{
+                width: 90%;
+            }
+
+            .included, .not-included {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            h4 {
+                padding-top: 1rem;
+                font-size: 1.35em;
+                text-underline-offset: .1rem;
+            }
+
+            li {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+/* MOVIL HORIZONTAL */
+@media only screen and (max-height: 450px) {
+    .wallpaper {
+        font-size: 2rem;
+
+        h1 {
+            top: 2.5rem;
+        }
+    }
+
+    .description{
+        &::before {
+            font-size: 1rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+    .conditions {
+        top: 47rem;
+        height: 71rem;
+
+        h2{
+            font-size: 2.25rem;
+        }
+
+        .conditions-list{
+            gap: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .prices{
+        top: 120rem;
+        height: 107rem;
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: -1rem;
+        }
+
+        .flex{
+            .spanish, .english {
+                h3{
+                    font-size: 2rem;
+                }
+                
+                li{
+                    font-size: 1.75rem;
+                }
+
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+
+            .spanish li {
+                margin-left: 4rem;
+            }
+        }
+
+        .advices {
+            &::before{
+                width: 95%;
+            }
+
+            h4 {
+                padding-top: 1rem;
+                font-size: 2.5rem;
+                text-underline-offset: .1rem;
+            }
+
+            li {
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+/* TABLET VERTICAL */
+@media only screen and (max-height: 1280px) and (max-width: 850px) and (min-height: 1000px){
+    .wallpaper {
+        height: 15rem;
+        font-size: 2rem;
+
+        h1 {
+            top: 6rem;
+        }
+
+        &::after{
+            top: 15rem;
+        }
+    }
+
+    .description {
+        top: 16rem;
+
+        &::before {
+            top: .25rem;
+            font-size: 1.1rem;
+        }
+
+        p{
+            margin-top: 2rem;
+            font-size: 1.28rem;
+        }
+    }
+
+    .conditions {
+        h2{
+            font-size: 2rem;
+        }
+
+        .conditions-list{
+            gap: 2rem;
+            font-size: 1.75rem;
+        }
+    }
+
+    .prices{
+        h2 {
+            font-size: 3rem;
+            margin-bottom: -1rem;
+        }
+
+        .flex{
+            .spanish, .english {
+                h3{
+                    font-size: 2rem;
+                    text-underline-offset: .3rem;
+                }
+                
+                li{
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    margin-left: 0.5rem;
+                }
+
+                p{
+                    margin-left: -1rem;
+                    font-size: 1.5rem;
+                }
+            }
+
+            .spanish li {
+                margin-left: 3rem;
+            }
+        }
+
+        .advices {
+            &::before{
+                width: 95%;
+            }
+
+            .included li{
+                margin-left: 7rem;
+            }
+
+            h4 {
+                padding-top: 1rem;
+                font-size: 1.7em;
+                text-underline-offset: .1rem;
+                margin-bottom: -.25rem;
+            }
+
+            li {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+/* PC */
+@media only screen and (min-width: 951px) {
+    .wallpaper {
+        height: 27vw;
+        top: -5vw;
+        font-size: 2.5vw;
+
+        h1 {
+            top: 15vw;
+            left: 3vw;
+        }
+
+        &::after{
+            top: 27vw;
+        }
+    }
+
+    .description {
+        top: 23vw;
+        padding: 3vw 3vw;
+        font-size: 1.4vw;
+
+        &::before {
+            top: 1vw;
+            font-size: 1.35vw;
+        }
+    }
+
+    .conditions {
+        top: 47.6vw;
+        padding-bottom: 2vw;
+
+        h2{
+            padding-left: 3vw;
+            font-size: 2.5vw;
+            text-underline-offset: .5vw;
+        }
+
+        .conditions-list{
+            padding: 0 3vw 0 4vw;
+            gap: 2vw;
+            font-size: 1.2vw;
+
+            b{
+                text-underline-offset: .3vw;
+            }
+        }
+    }
+
+    .prices{
+        top: 90vw;
+        padding-bottom: 6vw;
+
+        h2 {
+            padding-left: 3vw;
+            font-size: 3vw;
+            letter-spacing: .3vw;
+            text-underline-offset: .5vw;
+        }
+
+        .flex{
+            margin-bottom: 2vw;
+
+            h3{
+                font-size: 2.5vw;
+                text-underline-offset: .5vw;
+            }
+            
+            li{
+                font-size: 1.75vw;
+                letter-spacing: .1vw;
+                margin-bottom: 1.5vw;
+            }
+
+            .spanish p {
+                margin-left: -4vw;
+                font-size: 1.5vw;
+            }
+
+            .english p {
+                margin-left: -1vw;
+                font-size: 1.5vw;
+            }
+        }
+
+        .advices {
+            flex-direction: row;
+            justify-content: center;
+            gap: 27vw;
+            padding-left: 3vw;
+            padding-right: 3vw;
+
+            &::before{
+                width: 50%;
+            }
+
+            h4 {
+                padding-top: 2vw;
+                font-size: 1.5vw;
+                text-underline-offset: .3vw;
+            }
+
+            li {
+                font-size: 1.25vw;
+                margin-bottom: 1vw;
+            }
+        }
+    }
+}

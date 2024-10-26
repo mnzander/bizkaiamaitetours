@@ -1,0 +1,537 @@
+/* MOVILES */
+@media only screen and (max-width: 950px) {
+	body {
+		margin: 0;
+		background-color: #1a1a1a;
+		color: #fff;
+		position: relative;
+		overflow: hidden;
+		font-family: "Inter", sans-serif;
+	}
+	
+	.card {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-position: center;
+		background-size: cover;
+		box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.6);
+	}
+	
+	.card-content {
+		display: none;
+	}
+	
+	.details {
+		z-index: 22;
+		position: absolute;
+		top: 18rem;
+		left: 1.5rem;
+	}
+	
+	.details .place-box {
+		display: none;
+	}
+	
+	.details .title-1, .details .title-2 {
+		font-weight: 600;
+		font-size: 3rem;
+		font-family: "Oswald", sans-serif;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
+	}
+	
+	.details > .desc {
+		margin-top: 1rem;
+		width: 50%;
+		font-weight: bold;
+		color: #fff;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
+	}
+	
+	.details > .cta {
+		margin-top: 2rem;
+		width: 40rem;
+		display: flex;
+		align-items: center;
+	}
+	.details > .cta > .discover {
+		border: 1px solid #fff;
+		background-color: #ecad29;
+		height: 3rem;
+		border-radius: 2rem;
+		color: #fff;
+		padding: 4px 24px;
+		font-size: 1.5rem;
+		font-family: "Oswald", sans-serif;
+		text-transform: uppercase;
+	}
+	
+	.indicator {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		height: 5px;
+		z-index: 60;
+		background-color: #ecad29;
+	}
+	
+	.pagination {
+		display: none;
+	}
+	
+	.cover {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100vh;
+		height: 100vh;
+		background-color: #fff;
+		z-index: 100;
+	};
+	
+}
+
+/* MOVIL HORIZONTAL */
+@media only screen and (max-height: 450px) {
+	.details {
+		z-index: 22;
+		position: absolute;
+		top: 2.5rem;
+		left: 1.5rem;
+	}
+	
+	.details .title-1, .details .title-2 {
+		font-weight: 600;
+		font-size: 2.5rem;
+		font-family: "Oswald", sans-serif;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
+	}
+	
+	.details > .desc {
+		margin-top: .5rem;
+		width: 50%;
+		font-weight: bold;
+		color: #fff;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
+	}
+
+	.details > .cta {
+		margin-top: .5rem;
+		width: 40rem;
+		display: flex;
+		align-items: center;
+	}
+
+	.details > .cta > .discover {
+		border: 1px solid #fff;
+		background-color: #ecad29;
+		height: 2.5rem;
+		border-radius: 2rem;
+		color: #fff;
+		padding: 4px 24px;
+		font-size: 1.25rem;
+		font-family: "Oswald", sans-serif;
+		text-transform: uppercase;
+	}
+}
+
+/* TABLETS */
+@media only screen and (max-width: 1280px) and (min-width: 800px) and (min-height: 451px){
+	body {
+		margin: 0;
+		background-color: #1a1a1a;
+		color: #fff;
+		position: relative;
+		overflow: hidden;
+		font-family: "Inter", sans-serif;
+	}
+	
+	.card {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-position: center;
+		background-size: cover;
+		box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.6);
+	}
+	
+	.card-content {
+		display: none;
+	}
+	
+	.details {
+		z-index: 22;
+		position: absolute;
+		top: 14rem;
+		left: 1.5rem;
+	}
+	
+	.details .place-box {
+		display: none;
+	}
+	
+	.details .title-1, .details .title-2 {
+		font-weight: 600;
+		font-size: 5rem;
+		font-family: "Oswald", sans-serif;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
+	}
+	
+	.details > .desc {
+		margin-top: 1rem;
+		font-size: 1.5rem;
+		width: 60%;
+		font-weight: bold;
+		color: #fff;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
+	}
+	
+	.details > .cta {
+		margin-top: 2rem;
+		width: 40rem;
+		display: flex;
+		align-items: center;
+	}
+	
+	.details > .cta > .bookmark {
+		display: none;
+	}
+
+	.details > .cta > .discover {
+		border: 1px solid #fff;
+		background-color: #ecad29;
+		height: 4rem;
+		border-radius: 2rem;
+		color: #fff;
+		padding: 4px 24px;
+		font-size: 2rem;
+		font-family: "Oswald", sans-serif;
+		text-transform: uppercase;
+	}
+	
+	.indicator {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		height: 5px;
+		z-index: 60;
+		background-color: #ecad29;
+	}
+	
+	.pagination {
+		display: none;
+	}
+	
+	.cover {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100vh;
+		height: 100vh;
+		background-color: #fff;
+		z-index: 100;
+	};
+}
+
+/* TABLET VERTICAL */
+@media only screen and (max-height: 1280px) and (max-width: 850px) and (min-height: 1000px){
+	.card-content {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		color: #fff;
+		padding-left: 16px;
+	}
+	
+	.content-place {
+		margin-top: 1rem;
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+
+	.content-title-1, .content-title-2 {
+		font-weight: 600;
+		font-size: 1.55rem;
+		font-family: "Oswald", sans-serif;
+		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.582);
+	}
+	
+	.content-start {
+		margin-top: -1.5rem;
+		width: 2rem;
+		height: .4rem;
+		border-radius: 2rem;
+		background-color: #fff;
+	}
+	
+	.details {
+		z-index: 22;
+		position: absolute;
+		top: 14rem;
+		left: 1.5rem;
+	}
+	
+	.details .place-box {
+		display: none;
+	}
+	
+	.details .title-1, .details .title-2 {
+		font-weight: 600;
+		font-size: 5rem;
+		font-family: "Oswald", sans-serif;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
+	}
+	
+	.details > .desc {
+		margin-top: 1rem;
+		font-size: 1.5rem;
+		width: 60%;
+		font-weight: bold;
+		color: #fff;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
+	}
+	
+	.details > .cta {
+		margin-top: 2rem;
+		width: 40rem;
+		display: flex;
+		align-items: center;
+	}
+	
+	.details > .cta > .bookmark {
+		display: none;
+	}
+
+	.details > .cta > .discover {
+		border: 1px solid #fff;
+		background-color: #ecad29;
+		height: 4rem;
+		border-radius: 2rem;
+		color: #fff;
+		padding: 4px 24px;
+		font-size: 2rem;
+		font-family: "Oswald", sans-serif;
+		text-transform: uppercase;
+	}
+	
+	.indicator {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		height: 5px;
+		z-index: 60;
+		background-color: #ecad29;
+	}
+	
+	.pagination {
+		display: none;
+	}
+	
+	.cover {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100vh;
+		height: 100vh;
+		background-color: #fff;
+		z-index: 100;
+	};
+}
+
+/* PC */
+@media only screen and (min-width: 1281px) {
+	body {
+		margin: 0;
+		background-color: #1a1a1a;
+		color: #fff;
+		position: relative;
+		overflow: hidden;
+		font-family: "Inter", sans-serif;
+	}
+	
+	.card {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-position: center;
+		background-size: cover;
+		box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.6);
+	}
+	
+	.card-content {
+		position: absolute;
+		left: 0;
+		top: 0;
+		color: #fff;
+		padding-left: 16px;
+	}
+	
+	.content-place {
+		margin-top: 6px;
+		font-size: 13px;
+		font-weight: 500;
+	}
+	
+	.content-title-1, .content-title-2 {
+		font-weight: 600;
+		font-size: 20px;
+		font-family: "Oswald", sans-serif;
+	}
+	
+	.content-start {
+		width: 30px;
+		height: 5px;
+		border-radius: 99px;
+		background-color: #fff;
+	}
+	
+	.details {
+		z-index: 22;
+		position: absolute;
+		top: 14vw;
+		left: 3vw;
+	}
+	
+	.details .place-box {
+		height: 2vw;
+		overflow: hidden;
+	}
+	
+	.details .place-box .text {
+		font-size: 1.7vw;
+		color: white;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	};
+	
+	.details .place-box .text:before {
+		top: 0;
+		left: 0;
+		position: absolute;
+		content: "";
+		width: 3vw;
+		height: 1vw;
+		border-radius: 3vw;
+		background-color: white;
+	}
+	
+	.details .title-1, .details .title-2 {
+		font-weight: 600;
+		font-size: 5vw;
+		font-family: "Oswald", sans-serif;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	}
+
+	.details .title-1 {
+		margin-bottom: -1vw;
+	}
+	
+	.details > .desc {
+		margin-top: 1vw;
+		width: 30vw;
+		font-weight: bold;
+		font-size: 1.1vw;
+		color: #fff;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
+		mix-blend-mode: multiply;
+	}
+	
+	.details > .cta {
+		width: 15vw;
+		margin-top: 2vw;
+		display: flex;
+		align-items: center;
+	}
+	
+	.details > .cta > .discover {
+		border: 1px solid #fff;
+		background-color: #ecad29;
+		height: 4rem;
+		width: 17rem;
+		border-radius: 2rem;
+		color: #fff;
+		padding: 4px 24px;
+		font-size: 1.5rem;
+		font-family: "Oswald", sans-serif;
+		text-transform: uppercase;
+
+		&:hover {
+			cursor: pointer;
+			background-color: #ffc037;
+			font-size: 1.7rem;
+			transition: 0.2s ease;
+		}
+	}
+	
+	.indicator {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		height: 5px;
+		z-index: 60;
+		background-color: #ecad29;
+	}
+	
+	.pagination {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		display: inline-flex;
+	}
+	
+	.pagination .progress-sub-container {
+		margin-left: 150px;
+		z-index: 60;
+		width: 500px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+	}
+	
+	.pagination .progress-sub-container .progress-sub-background {
+		width: 500px;
+		height: 5px;
+		background-color: #fff;
+	}
+	
+	.pagination .progress-sub-container .progress-sub-background .progress-sub-foreground {
+		height: 5px;
+		background-color: #ecad29;
+	}
+	
+	.pagination .slide-numbers {
+		width: 50px;
+		height: 50px;
+		overflow: hidden;
+		z-index: 60;
+		position: relative;
+	}
+	
+	.pagination .slide-numbers .item {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		color: white;
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+		top: 0;
+		left: 0;
+		display: grid;
+		place-items: center;
+		font-size: 32px;
+		font-weight: bold;
+	}
+	
+	.cover {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: #fff;
+		z-index: 100;
+	};	
+}

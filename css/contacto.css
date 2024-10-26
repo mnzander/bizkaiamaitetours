@@ -1,0 +1,699 @@
+html{
+    scrollbar-width: thin;
+    scrollbar-color: #ecad29 #00000000;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    overflow-y: auto ;
+}
+
+@keyframes appearSmoothly {
+    from {
+    opacity: 0;
+    transform: translateY(1.5vw);
+    filter: blur(2px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    }
+}
+
+@keyframes pulse-move {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.025);
+    }
+}
+
+main {
+    animation: appearSmoothly 1s ease-in-out forwards;
+    animation-delay: .1s;
+    opacity: 0;
+    transform: translateY(0);
+    filter: blur(2px);
+
+    .wallpaper {
+        width: 100%;
+        background-image: url(/utils/img-index/puente-colgante.png);
+        background-size: cover;
+        position: absolute;
+        font-family: "Oswald", sans-serif;
+
+        h1 {
+            position: absolute;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: inherit;
+            background-color: #ecad29;
+        }
+    }
+
+    .description {
+        position: absolute;
+        font-family: "Poppins", sans-serif;
+
+        &::before {
+            content: "''Consulta nuestras opciones de contacto para un servicio claro y de calidad.''";
+            position: absolute;
+            color: #ecad29;
+            font-style: italic;
+        }
+    }
+
+    .options {
+        position: absolute;
+        background-color: #ecad29;
+        color: black;
+        font-family: "Poppins", sans-serif;
+        width: 100%;
+
+        &::before{
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        h2{
+            text-decoration: underline;
+        }
+
+        .flex-contact {
+            display: flex;
+
+            .methods {
+                .phone .flex, .email .flex{
+                    display: flex;
+                    align-items: center;
+                }
+
+                svg {
+                    border-radius: 50%;
+                }
+
+                .phone svg {
+                    border: 2px solid white;
+                    background-color: green;
+                    fill: white;
+                }
+
+                .email svg {
+                    border: 2px solid black;
+                    background-color: white;
+                    fill: black;
+                }
+
+                .phone .flex .number, .email .flex .mailto {
+                    font-weight: bold;
+                    font-style: italic;
+                }
+
+                .mailto {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                        transition: .3s ease;
+                        animation: pulse-move 2s infinite;                
+                    }
+                }
+            }
+
+            .ratings {
+                .title{
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+
+                .google, .viator, .tripadvisor {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img:hover{
+                        filter: brightness(120%) saturate(150%) sepia(10%) opacity(0.9);
+                        transition: filter 0.3s ease;
+                    }
+
+                    .stars{
+                        display: flex;
+
+                        svg{
+                            fill: rgb(251, 255, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .media-links {
+        position: absolute;
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        background-color: rgba(255, 255, 255, 0.918);
+        padding-bottom: 3vw;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background-color: black;
+        }
+
+        h3{
+            text-decoration: underline;
+            color:#ecad29
+        }
+
+        h4{
+            text-decoration: underline;
+            color:black;
+        }
+
+
+        li{
+            color: black;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        } 
+    }
+}
+
+/* MOVIL */
+@media only screen and (max-width: 950px) {
+    .wallpaper {
+        height: 11rem;
+        top: 0rem;
+        font-size: 1.5rem;
+
+        h1 {
+            top: 4.5rem;
+            left: 1rem;
+        }
+
+        &::after{
+            top: 11rem;
+        }
+    }
+
+    .description {
+        top: 12rem;
+        padding: 1rem 1rem;
+
+        &::before {
+            top: .25rem;
+            font-size: .85rem;
+        }
+
+        p{
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+    }
+
+    .options{
+        top: 30rem;
+        height: 51rem;
+        padding-bottom: 1rem;
+
+        h2{
+            padding-left: 1rem;
+            font-size: 2rem;
+            text-underline-offset: .5vw;
+        }
+
+        .flex-contact{
+            flex-direction: column;
+            gap: 2rem;
+
+            .methods {
+                margin-bottom: -3rem;
+
+                .phone .desc, .email .desc {
+                    margin: 0 1rem;
+                    font-size: 1.2rem;
+                    margin-bottom: 1.5rem;
+                }
+    
+                .phone .flex, .email .flex{
+                    margin-left: 1rem;
+                    margin-bottom: 1.5rem;
+                }
+        
+                svg {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    padding: .5rem;
+                }
+        
+                .phone .flex .number, .email .flex .mailto {
+                    margin-left: 1rem;
+                    font-size: 1rem;
+                }
+            }
+
+            .ratings {
+                .title{
+                    font-size: 1.4rem;
+                    padding: 0 1rem;
+                    text-underline-offset: .3rem;
+                }
+
+                .google, .viator, .tripadvisor {
+                    margin-bottom: 1rem;
+
+                    img {
+                        width: 4rem;
+                        height: 4rem;
+                        margin-right: 1rem;
+                    }
+
+                    .stars{
+                        gap: .5rem;
+
+                        svg{
+                            width: 2rem;
+                            height: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .media-links{
+        top: 82rem;
+
+        h3 {
+            font-size: 2rem;
+            padding: 0 1rem;
+            text-underline-offset: .5rem;
+            margin-bottom: -1rem;
+        }
+
+        .empresas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h4{
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            text-underline-offset: .3rem;
+        }
+
+        li a{
+            font-size: 1.5rem;
+            text-decoration: underline;
+            text-underline-offset: .1rem;
+        }
+
+        .viator li{
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .tripadvisor li{
+            margin-left: -2rem;
+        }
+
+        .media li{
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        a{
+            font-size: 1.75vw;
+        }
+
+        a:hover {
+            text-underline-offset: .5vw;
+        }
+    }
+}
+
+/* TABLET VERTICAL */
+@media only screen and (max-height: 1280px) and (max-width: 850px) and (min-height: 1000px){
+    .wallpaper {
+        height: 15rem;
+        font-size: 2.5rem;
+
+        h1 {
+            top: 4.5rem;
+        }
+
+        &::after{
+            top: 15rem;
+        }
+    }
+
+    .description {
+        top: 16rem;
+
+        &::before {
+            top: .25rem;
+            font-size: 1.1rem;
+        }
+
+        p{
+            margin-top: 2rem;
+            font-size: 1.28rem;
+        }
+    }
+
+    .options{
+        h2{
+            display: flex;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+
+        .flex-contact{
+            .methods {
+                .phone .desc, .email .desc {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                }
+
+                .flex {
+                    display: flex;
+                    justify-content: center;
+                }
+        
+                svg {
+                    width: 2rem;
+                    height: 2rem;
+                    padding: 1rem;
+                }
+        
+                .phone .flex .number, .email .flex .mailto {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .ratings {
+                margin-top: 2rem;
+
+                .title{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                }
+
+                .google, .viator, .tripadvisor {
+                    margin-bottom: 1rem;
+
+                    img {
+                        width: 4.5rem;
+                        height: 4.5rem;
+                        margin-right: 1rem;
+                    }
+
+                    .stars{
+                        gap: .75rem;
+
+                        svg{
+                            width: 2.5rem;
+                            height: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .media-links{
+        h3 {
+            display: flex;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+/* MOVIL HORIZONTAL */
+@media only screen and (max-height: 450px) {
+    .description {
+        &::before {
+            font-size: 1.2rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+    .options{
+        h2{
+            display: flex;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+
+        .flex-contact{
+            .methods {
+
+                .flex{
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .phone .desc, .email .desc {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                }
+        
+                svg {
+                    width: 2rem;
+                    height: 2rem;
+                    padding: 1rem;
+                }
+        
+                .phone .flex .number, .email .flex .mailto {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .ratings {
+                margin-top: 2rem;
+                .title{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                }
+
+                .google, .viator, .tripadvisor {
+                    margin-bottom: 1rem;
+
+                    img {
+                        width: 4.5rem;
+                        height: 4.5rem;
+                        margin-right: 1rem;
+                    }
+
+                    .stars{
+                        gap: .75rem;
+
+                        svg{
+                            width: 2.5rem;
+                            height: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .media-links{
+        h3 {
+            display: flex;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+/* PC */
+@media only screen and (min-width: 951px) {
+    .wallpaper {
+        height: 27vw;
+        top: -5vw;
+        font-size: 2.5vw;
+
+        h1 {
+            top: 15vw;
+            left: 3vw;
+        }
+
+        &::after{
+            top: 27vw;
+        }
+    }
+
+    .description {
+        top: 23vw;
+        padding: 4vw 3vw;
+        font-size: 1.5vw;
+
+        &::before {
+            top: 1vw;
+            font-size: 1.35vw;
+        }
+    }
+
+    .options{
+        top: 40vw;
+        padding-bottom: 3vw;
+
+        h2{
+            padding-left: 3vw;
+            font-size: 2.5vw;
+            text-underline-offset: .5vw;
+        }
+
+        .flex-contact{
+            gap: 13vw;
+
+            .methods {
+                .phone .desc, .email .desc {
+                    margin-left: 3vw;
+                    font-size: 1.7vw;
+                }
+        
+                .phone .desc {
+                    margin-bottom: 0vw;
+                }
+        
+                .phone .flex, .email .flex{
+                    margin-left: 3vw;
+                }
+        
+                svg {
+                    width: 2vw;
+                    height: 2vw;
+                    padding: 1vw;
+                    margin-right: -2vw;
+                }
+        
+                .phone .flex .number, .email .flex .mailto {
+                    margin-left: 3vw;
+                    font-size: 2vw;
+                    letter-spacing: .1vw;
+                }
+        
+                .mailto:hover{
+                    border-radius: 10px;
+                    padding: 10px;
+                }
+            }
+
+            .ratings {
+                margin-top: -3.5vw;
+
+                .title{
+                    font-size: 1.7vw;
+                    text-underline-offset: .3vw;
+                }
+
+                .google, .viator, .tripadvisor {
+                    margin-bottom: 1.2vw;
+
+                    img {
+                        width: 4vw;
+                        height: 4vw;
+                        margin-right: 2vw;
+                    }
+
+                    .stars{
+                        gap: .75vw;
+
+                        svg{
+                            width: 2.75vw;
+                            height: 2.75vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .media-links{
+        top: 72vw;
+
+        h3 {
+            display: flex;
+            justify-content: center;
+            font-size: 3vw;
+            text-underline-offset: .5vw;
+            margin-bottom: -1vw;
+        }
+
+        .empresas{
+            display: flex;
+            justify-content: space-evenly;
+            font-display: row;
+        }
+
+        h4{
+            font-size: 2.5vw;
+            text-underline-offset: .3vw;
+        }
+
+        li{
+            font-size: 1.75vw;
+            margin-bottom: 1.5vw;
+        }
+
+        .viator li{
+            margin-left: -3vw;
+        }
+
+        .tripadvisor li{
+            margin-left: -1.5vw;
+        }
+
+        .media li{
+            margin-left: 3vw;
+        }
+
+        a{
+            font-size: 1.75vw;
+        }
+
+        a:hover {
+            text-underline-offset: .5vw;
+        }
+    }
+}

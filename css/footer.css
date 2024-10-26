@@ -1,0 +1,188 @@
+/* MOBILE */
+@media only screen and (max-width: 1024px) {
+    footer{
+        position: absolute;
+        top: 227rem;
+        height: auto;
+        width: 100%;
+        font-family: "Poppins", sans-serif; 
+
+        &::before{
+            content:"";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            height: 1vw;
+
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1a1a1a;
+            height: auto;
+            padding: 1rem;
+        }
+
+        .title{
+            letter-spacing: .3rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #ecad29;    
+            font-family: "Poppins", sans-serif; 
+        }
+
+        .copyright {
+            font-size: .60rem;
+            font-weight: bold;
+            color: #ecad29; 
+            font-family: "Poppins", sans-serif;  
+        }
+    }
+    
+    .social-links {
+        display:flex;
+        gap: 2rem;
+        position: relative;
+        margin-bottom: 1rem;
+
+        a{
+            display: flex;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+
+            svg{
+                height: 2rem;
+                width: 2rem;
+            }
+        }
+        
+        .fb{
+            background: rgb(0, 85, 165);
+        }
+
+        .yt{
+            background: rgb(255, 7, 7);
+        }
+
+        .ig{
+            background: conic-gradient(
+                from 240deg,
+                #f09433,
+                #e6683c,
+                #dc2743,
+                #cc2366,
+                #bc1888,
+                #e1306c,
+                #fd1d1d,
+                #f56040,
+                #f77737,
+                #fcaf45 370deg,
+                #ffdc80 370deg,
+                #f09433 370deg
+            );
+        }
+    }
+}
+
+
+/* PC */
+@media only screen and (min-width: 1030px) {
+    footer{
+        position: absolute;
+        top: 153vw;
+        width: 100%;
+        font-family: "Poppins", sans-serif; 
+
+        &::before{
+            content:"";
+            position: absolute;
+            top: 0vw;
+            width: 100%;
+            background-color: white;
+            height: .25vw;
+
+        }
+
+        .title{
+            letter-spacing: 3px;
+            font-size: 1.25vw;
+            font-weight: bold;
+            color: #ecad29;    
+            font-family: "Poppins", sans-serif; 
+        }
+
+        .copyright {
+            font-size: .60vw;
+            font-weight: bold;
+            color: #ecad29; 
+            font-family: "Poppins", sans-serif;  
+        }
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1a1a1a;
+        height: 5vw;
+        padding: 3vw
+    }
+    
+    .social-links {
+        display:flex;
+        gap: 2vw;
+        position: relative;
+
+        a{
+            display: flex;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            width: 3vw;
+            height: 3vw;
+
+            svg{
+                height: 1.75vw;
+                width: 1.75vw;
+
+                &:hover{
+                    height: 2vw;
+                    width: 2vw;
+                    transition: .3s;
+                }
+            }
+        }
+        
+        .fb{
+            background: rgb(0, 85, 165);
+        }
+
+        .yt{
+            background: rgb(255, 7, 7);
+        }
+
+        .ig{
+            background: conic-gradient(
+                from 240deg,
+                #f09433,
+                #e6683c,
+                #dc2743,
+                #cc2366,
+                #bc1888,
+                #e1306c,
+                #fd1d1d,
+                #f56040,
+                #f77737,
+                #fcaf45 370deg,
+                #ffdc80 370deg,
+                #f09433 370deg
+            );
+        }
+    }
+}
