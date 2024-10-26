@@ -89,19 +89,19 @@ discoverBtn.addEventListener("click", () => {
   switch (currentPage) {
     case null:
     case 0:
-      window.location.href = "rutacostera.html";
+      window.location.href = "../pages/rutacostera.html";
       break;
     case 1:
-      window.location.href = "rutaminera.html";
+      window.location.href = "../pages/rutaminera.html";
       break;
     case 2:
-      window.location.href = "rutaduranguesado.html";
+      window.location.href = "../pages/rutaduranguesado.html";
       break;
     case 3:
-      window.location.href = "rutabilbao.html";
+      window.location.href = "../pages/rutabilbao.html";
       break;
     case 4:
-      window.location.href = "rutagranbilbao.html";
+      window.location.href = "../pages/rutagranbilbao.html";
       break;
   }
 });
