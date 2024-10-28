@@ -71,7 +71,7 @@
 		font-size: 3vw;
 		top: 3rem;
 		width: 50vw;
-		height: 75vh;
+		height: 60vh;
 		overflow-y: auto; /* Agrega scroll si es necesario */
 	}
 }
