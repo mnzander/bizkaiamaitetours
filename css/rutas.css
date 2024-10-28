@@ -175,7 +175,7 @@
             transition: .5s ease;
         }
 
-        section img:active{
+        section img:focus{
             cursor: crosshair;
             width: 15rem;
             opacity: 1;
@@ -288,7 +288,7 @@
             height: 20rem;
         }
 
-        section img:active{
+        section img:focus{
             width: 18rem;
         }
     } 

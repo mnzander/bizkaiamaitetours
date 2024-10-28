@@ -64,7 +64,7 @@
             Recorrido por la costa de Bizkaia, llena de lugares emblemáticos en la historia de esta tierra.
         </div>
         <div class="cta">
-            <button class="discover">Discover Location</button>
+            <button class="discover">DESCÚBRELO</button>
         </div>
     </div>
 
@@ -83,5 +83,10 @@
     <script src="/js/index.js"></script>
     <script type="module" src="../js/rutas.js"></script>
     <script type="module" src="../js/mobile.js"></script>
+    <script>
+        window.addEventListener("orientationchange", function() {
+            location.reload();   
+        });
+    </script>
 </body>
 </html>

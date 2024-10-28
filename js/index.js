@@ -115,7 +115,7 @@ if (window.innerWidth <= 1380 && window.innerHeight <= 1024) { // Condición par
   cardHeight = 0;
   gap = 0;
   numberSize = 0;
-} else { // Condición para escritorio (ancho de pantalla mayor a 768px)
+} else { // Condición para escritorio
   offsetTop = 200;
   offsetLeft = 700;
   cardWidth = 200;

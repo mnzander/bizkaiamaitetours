@@ -26,8 +26,8 @@
 	.details {
 		z-index: 22;
 		position: absolute;
-		top: 18rem;
-		left: 1.5rem;
+		top: 40vh;
+		left: 3vh;
 	}
 	
 	.details .place-box {
@@ -36,33 +36,34 @@
 	
 	.details .title-1, .details .title-2 {
 		font-weight: 600;
-		font-size: 3rem;
+		font-size: 12vw;
 		font-family: "Oswald", sans-serif;
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
 	}
 	
 	.details > .desc {
-		margin-top: 1rem;
-		width: 50%;
+		margin-top: 5vw;
+		width: 80%;
+		font-size: 4.5vw;
 		font-weight: bold;
 		color: #fff;
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
 	}
 	
 	.details > .cta {
-		margin-top: 2rem;
-		width: 40rem;
+		margin-top: 5vh;
+		width: 40vw;
 		display: flex;
 		align-items: center;
 	}
 	.details > .cta > .discover {
 		border: 1px solid #fff;
 		background-color: #ecad29;
-		height: 3rem;
+		height: 8vh;
 		border-radius: 2rem;
 		color: #fff;
 		padding: 4px 24px;
-		font-size: 1.5rem;
+		font-size: 7vw;
 		font-family: "Oswald", sans-serif;
 		text-transform: uppercase;
 	}
@@ -85,12 +86,11 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		width: auto;
-		height: auto;
+		width: 100vw;
+		height: 100vh;
 		background-color: #fff;
 		z-index: 100;
-	};
-	
+	};		
 }
 
 /* MOVIL HORIZONTAL */
@@ -98,19 +98,19 @@
 	.details {
 		z-index: 22;
 		position: absolute;
-		top: 6.5rem;
-		left: 1.5rem;
+		top: 15vh;
+		left: 3vw;
 	}
 	
 	.details .title-1, .details .title-2 {
 		font-weight: 600;
-		font-size: 2.5rem;
+		font-size: 5vw;
 		font-family: "Oswald", sans-serif;
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
 	}
 	
 	.details > .desc {
-		margin-top: .5rem;
+		margin-top: 1vh;
 		width: 50%;
 		font-weight: bold;
 		color: #fff;
@@ -118,8 +118,8 @@
 	}
 
 	.details > .cta {
-		margin-top: .5rem;
-		width: 40rem;
+		margin-top: 3vh;
+		width: 40vw;
 		display: flex;
 		align-items: center;
 	}
@@ -127,11 +127,11 @@
 	.details > .cta > .discover {
 		border: 1px solid #fff;
 		background-color: #ecad29;
-		height: 2.5rem;
-		border-radius: 2rem;
+		height: 15vh;
+		border-radius: 5vw;
 		color: #fff;
 		padding: 4px 24px;
-		font-size: 1.25rem;
+		font-size: 3vw;
 		font-family: "Oswald", sans-serif;
 		text-transform: uppercase;
 	}
@@ -455,14 +455,14 @@
 		border-radius: 2rem;
 		color: #fff;
 		padding: 4px 24px;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		font-family: "Oswald", sans-serif;
 		text-transform: uppercase;
 
 		&:hover {
 			cursor: pointer;
 			background-color: #ffc037;
-			font-size: 1.7rem;
+			font-size: 2.25rem;
 			transition: 0.2s ease;
 		}
 	}

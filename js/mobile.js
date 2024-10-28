@@ -54,5 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 50);
 
         burgerMenuActive = false;
-    }
+    }  
+
 });

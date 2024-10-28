@@ -38,22 +38,22 @@
 	.burger-menu {
 		display: flex;
 		flex-direction: column;
-		padding: 2rem;
-		gap: 3rem;
-		font-size: 1.3rem;
+		padding: 5vh 3rem;
+		gap: 5vh;
+		font-size: 5.5vw;
 		font-weight: 500;
 		color: black;
 		font-family: "Poppins", sans-serif;
 		position: fixed;
 		top: 3rem;
-		left: 0;
+		left: -1rem;
 		z-index: 9999;
 		background-color: #ecad29;
 		border-radius: .25rem;
-		width: 14rem;
+		width: 57vw;
 		height: 100vh;
-		border: 1px solid black;
 		overflow-y: auto; /* Agrega scroll si es necesario */
+		border-right: 1px solid black;
 		
 		& a {
 			text-decoration: none;
@@ -64,14 +64,14 @@
 	}
 }
 
-/* MOVIL VERTICAL */
+/* MOVIL HORIZONTAL */
 @media only screen and (max-height: 450px) {
 	.burger-menu {
 		gap: 3rem;
 		font-size: 1.5rem;
 		top: 3rem;
 		width: 20rem;
-		height: 70vh;
+		height: 80vh;
 		overflow-y: auto; /* Agrega scroll si es necesario */
 	}
 }
