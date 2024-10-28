@@ -1,96 +1,104 @@
 /* MOVILES */
 @media only screen and (max-width: 950px) {
-	body {
-		margin: 0;
-		padding: 0;
-		background-color: #1a1a1a;
-		color: #fff;
-		position: relative;
-		overflow: hidden;
-		font-family: "Inter", sans-serif;
-	}
-	
-	.card {
-		position: absolute;
-		left: 0;
-		top: 0;
-		background-position: center;
-		background-size:cover;
-		box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.6);
-	}
-	
-	.card-content {
-		display: none;
-	}
-	
-	.details {
-		z-index: 22;
-		position: absolute;
-		top: 40vh;
-		left: 3vh;
-	}
-	
-	.details .place-box {
-		display: none;
-	}
-	
-	.details .title-1, .details .title-2 {
-		font-weight: 600;
-		font-size: 12vw;
-		font-family: "Oswald", sans-serif;
-		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
-	}
-	
-	.details > .desc {
-		margin-top: 5vw;
-		width: 80%;
-		font-size: 4.5vw;
-		font-weight: bold;
-		color: #fff;
-		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
-	}
-	
-	.details > .cta {
-		margin-top: 5vh;
-		width: 40vw;
-		display: flex;
-		align-items: center;
-	}
-	.details > .cta > .discover {
-		border: 1px solid #fff;
-		background-color: #ecad29;
-		height: 8vh;
-		border-radius: 2rem;
-		color: #fff;
-		padding: 4px 24px;
-		font-size: 7vw;
-		font-family: "Oswald", sans-serif;
-		text-transform: uppercase;
-	}
-	
-	.indicator {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+        color: #fff;
+        position: relative;
+        font-family: "Inter", sans-serif;
+    }
+
+	.container {
 		position: fixed;
+		top: 0;
 		left: 0;
 		right: 0;
-		top: 0;
-		height: 5px;
-		z-index: 60;
-		background-color: #ecad29;
+		bottom: 0;
+		overflow: hidden;
 	}
-	
-	.pagination {
-		display: none;
-	}
-	
-	.cover {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100vw;
-		height: 100vh;
-		background-color: #fff;
-		z-index: 100;
-	};		
+    
+    .card {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.6);
+    }
+    
+    .card-content {
+        display: none;
+    }
+    
+    .details {
+        z-index: 22;
+        position: absolute;
+        top: 40vh;
+        left: 3vh;
+    }
+    
+    .details .place-box {
+        display: none;
+    }
+    
+    .details .title-1, .details .title-2 {
+        font-weight: 600;
+        font-size: 12vw;
+        font-family: "Oswald", sans-serif;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
+    }
+    
+    .details > .desc {
+        margin-top: 5vw;
+        width: 80%;
+        font-size: 4.5vw;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.582);
+    }
+    
+    .details > .cta {
+        margin-top: 5vh;
+        width: 40vw;
+        display: flex;
+        align-items: center;
+    }
+    .details > .cta > .discover {
+        border: 1px solid #fff;
+        background-color: #ecad29;
+        height: 8vh;
+        border-radius: 2rem;
+        color: #fff;
+        padding: 4px 24px;
+        font-size: 7vw;
+        font-family: "Oswald", sans-serif;
+        text-transform: uppercase;
+    }
+    
+    .indicator {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 5px;
+        z-index: 60;
+        background-color: #ecad29;
+    }
+    
+    .pagination {
+        display: none;
+    }
+    
+    .cover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 100;
+    }
 }
 
 /* MOVIL HORIZONTAL */

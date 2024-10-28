@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes">
     <title>Bizkaia Maite Tours</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -12,72 +12,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="indicator"></div>
-    <!-- HEADER -->
-    <header>
-        <nav>
-            <button aria-label="abrir menu" class="burger-btn">
-                <svg class="burger-svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-                </svg>
-                <svg class="cross-svg" style="display:none;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
-                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-                </svg>
-            </button>
-            <div>
-                <div class="title"><a aria-label="pagina pricipal" href="index.html">BIZKAIA MAITE TOURS</a></div>
+    <div class="container">
+        <div class="indicator"></div>
+        <!-- HEADER -->
+        <header>
+            <nav>
+                <button aria-label="abrir menu" class="burger-btn">
+                    <svg class="burger-svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg>
+                    <svg class="cross-svg" style="display:none;" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </button>
+                <div>
+                    <div class="title"><a aria-label="pagina pricipal" href="index.html">BIZKAIA MAITE TOURS</a></div>
+                </div>
+                <div class="links-menu">
+                    <!-- Navigation Links -->
+                    <div class="links"><a aria-label="home" href="../pages/index.html">Home</a></div>
+                    <div class="links"><a aria-label="ruta costera" href="../pages/rutacostera.html">Ruta costera</a></div>
+                    <div class="links"><a aria-label="ruta minera" href="../pages/rutaminera.html">Ruta Minera</a></div>
+                    <div class="links"><a aria-label="ruta duranguesado" href="../pages/rutaduranguesado.html">Ruta Duranguesado</a></div>
+                    <div class="links"><a aria-label="ruta bilbao" href="../pages/rutabilbao.html">Ruta Bilbao</a></div>
+                    <div class="links"><a aria-label="ruta gran bilbao" href="../pages/rutagranbilbao.html">Ruta Gran Bilbao</a></div>
+                    <div class="links"><a aria-label="condiciones y tarifas" href="../pages/tarifas.html">Condiciones y tarifas</a></div>
+                    <div class="links"><a aria-label="contacto" href="../pages/contacto.html">Contacto</a></div>
+                </div>
+            </nav>
+            <div class="burger-menu" style="display: none;">
+                <a aria-label="home" href="../pages/index.html">Home</a>
+                <a aria-label="ruta costera" href="../pages/rutacostera.html">Ruta Costera</a>
+                <a aria-label="ruta minera" href="../pages/rutaminera.html">Ruta Minera</a>
+                <a aria-label="ruta duranguesado" href="../pages/rutaduranguesado.html">Ruta Duranguesado</a>
+                <a aria-label="ruta bilbao" href="../pages/rutabilbao.html">Ruta Bilbao</a>
+                <a aria-label="ruta gran bilbao" href="../pages/rutagranbilbao.html">Ruta Gran Bilbao</a>
+                <a aria-label="condiciones y tarifas" href="../pages/tarifas.html">Condiciones y tarifas</a>
+                <a aria-label="contacto" href="../pages/contacto.html">Contacto</a>
             </div>
-            <div class="links-menu">
-                <!-- Navigation Links -->
-                <div class="links"><a aria-label="home" href="../pages/index.html">Home</a></div>
-                <div class="links"><a aria-label="ruta costera" href="../pages/rutacostera.html">Ruta costera</a></div>
-                <div class="links"><a aria-label="ruta minera" href="../pages/rutaminera.html">Ruta Minera</a></div>
-                <div class="links"><a aria-label="ruta duranguesado" href="../pages/rutaduranguesado.html">Ruta Duranguesado</a></div>
-                <div class="links"><a aria-label="ruta bilbao" href="../pages/rutabilbao.html">Ruta Bilbao</a></div>
-                <div class="links"><a aria-label="ruta gran bilbao" href="../pages/rutagranbilbao.html">Ruta Gran Bilbao</a></div>
-                <div class="links"><a aria-label="condiciones y tarifas" href="../pages/tarifas.html">Condiciones y tarifas</a></div>
-                <div class="links"><a aria-label="contacto" href="../pages/contacto.html">Contacto</a></div>
+        </header>
+        
+        <div id="demo"></div>
+    
+        <div class="details" id="details-even">
+            <!-- Slide Content -->
+            <div class="place-box">
+                <div class="text">Mar</div>
             </div>
-        </nav>
-        <div class="burger-menu" style="display: none;">
-            <a aria-label="home" href="../pages/index.html">Home</a>
-            <a aria-label="ruta costera" href="../pages/rutacostera.html">Ruta Costera</a>
-            <a aria-label="ruta minera" href="../pages/rutaminera.html">Ruta Minera</a>
-            <a aria-label="ruta duranguesado" href="../pages/rutaduranguesado.html">Ruta Duranguesado</a>
-            <a aria-label="ruta bilbao" href="../pages/rutabilbao.html">Ruta Bilbao</a>
-            <a aria-label="ruta gran bilbao" href="../pages/rutagranbilbao.html">Ruta Gran Bilbao</a>
-            <a aria-label="condiciones y tarifas" href="../pages/tarifas.html">Condiciones y tarifas</a>
-            <a aria-label="contacto" href="../pages/contacto.html">Contacto</a>
+            <div class="title-1">RUTA</div>
+            <div class="title-2">COSTERA</div>
+            <div class="desc">
+                Recorrido por la costa de Bizkaia, llena de lugares emblemáticos en la historia de esta tierra.
+            </div>
+            <div class="cta">
+                <button class="discover">DESCÚBRELO</button>
+            </div>
         </div>
-    </header>
-
-    <div id="demo"></div>
-
-    <div class="details" id="details-even">
-        <!-- Slide Content -->
-        <div class="place-box">
-            <div class="text">Mar</div>
+    
+        <div class="pagination" id="pagination">
+            <div class="progress-sub-container">
+                <div class="progress-sub-background">
+                    <div class="progress-sub-foreground"></div>
+                </div>
+            </div>
+            <div class="slide-numbers" id="slide-numbers"></div>
         </div>
-        <div class="title-1">RUTA</div>
-        <div class="title-2">COSTERA</div>
-        <div class="desc">
-            Recorrido por la costa de Bizkaia, llena de lugares emblemáticos en la historia de esta tierra.
-        </div>
-        <div class="cta">
-            <button class="discover">DESCÚBRELO</button>
-        </div>
+    
+        <div class="cover"></div>
     </div>
-
-    <div class="pagination" id="pagination">
-        <div class="progress-sub-container">
-            <div class="progress-sub-background">
-                <div class="progress-sub-foreground"></div>
-            </div>
-        </div>
-        <div class="slide-numbers" id="slide-numbers"></div>
-    </div>
-
-    <div class="cover"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>   
     <script src="/js/index.js"></script>
