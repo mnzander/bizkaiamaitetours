@@ -111,6 +111,7 @@
 	
 	.details > .desc {
 		margin-top: 1vh;
+		font-size: 2vw;
 		width: 50%;
 		font-weight: bold;
 		color: #fff;
