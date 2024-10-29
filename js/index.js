@@ -108,7 +108,7 @@ discoverBtn.addEventListener("click", () => {
 
 let offsetTop, offsetLeft, cardWidth, cardHeight, gap, numberSize;
 
-if (window.innerWidth <= 1380 && window.innerHeight <= 1024) { // Condición para móviles
+if (window.innerWidth <= 1380 && window.innerHeight <= 1023) { // Condición para móviles
   offsetTop = 0;
   offsetLeft = 0;
   cardWidth = 0;

@@ -239,7 +239,16 @@ main {
                     font-size: 1.15rem;
                 }
             }
+
+            .spanish li {
+                margin-left: 3rem;
+            }
+
+            .spanish p {
+                margin-left: -3rem;
+            }
         }
+
 
         .advices {
             flex-direction: column;
