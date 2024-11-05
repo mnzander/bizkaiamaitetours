@@ -61,11 +61,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 const image = document.createElement("img");
                 image.src = img;
                 image.alt = `${stop.stopName.toLowerCase()}${imgIndex + 1}`;
-                image.onclick = () => {
-                    this.style.width = '100%';
-                    this.style.opacity = '1';
-                    this.style.filter = 'contrast(140%)';
+                let imgCliked = false;
+                if (window.innerWidth <= 1380 && window.innerHeight <= 1023){
+                    image.onclick = () => {
+                        if (imgCliked === false){
+                            imgCliked = true;
+                            image.style.width = '100%';
+                            image.style.opacity = '1';
+                            image.style.filter = 'contrast(140%)';
+                        } else if (imgCliked === true) {
+                            imgCliked = false;
+                            image.style.width = '';
+                            image.style.opacity = '';
+                            image.style.filter = '';
+                        };
+                    };
                 };
+
                 sectionImgs.appendChild(image);
             });
 
