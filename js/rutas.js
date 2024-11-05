@@ -61,6 +61,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 const image = document.createElement("img");
                 image.src = img;
                 image.alt = `${stop.stopName.toLowerCase()}${imgIndex + 1}`;
+                image.onclick = () => {
+                    this.style.width = '100%';
+                    this.style.opacity = '1';
+                    this.style.filter = 'contrast(140%)';
+                };
                 sectionImgs.appendChild(image);
             });
 
