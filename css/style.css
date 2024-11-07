@@ -43,7 +43,7 @@
     .details {
         z-index: 22;
         position: absolute;
-        top: 40vh;
+        top: 37vh;
         left: 3vh;
     }
     
@@ -126,7 +126,7 @@
 	.details {
 		z-index: 22;
 		position: absolute;
-		top: 15vh;
+		top: 13vh;
 		left: 3vw;
 	}
 	
